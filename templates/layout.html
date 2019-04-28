@@ -3,9 +3,10 @@
 
 {# Override the standard style to include a logo and a link to the site. #}
 
-{% block content %}
+{% block extrahead %}
 	{{ super() }}
-{% endblock content %}
+	<link rel="shortcut icon" href="_static/mango_logo_bg.png" />
+{% endblock extrahead %}
 
 {% block sidebartitle %}
 	<div>

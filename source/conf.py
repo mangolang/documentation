@@ -23,7 +23,6 @@ author = 'Mark'
 html_show_sourcelink = False
 
 theme_canonical_url = 'https://docs.mangolang.org/'
-favicon = 'mango_logo_bg.png'
 
 # The full version, including alpha/beta/rc tags
 release = '0.2.0'
