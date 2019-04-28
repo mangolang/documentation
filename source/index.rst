@@ -17,10 +17,3 @@ Mango is a programming language to help you make large software projects reliabl
     language_reference/index
     conventions/index
     guides/index
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
