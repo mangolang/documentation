@@ -6,11 +6,19 @@
 Welcome to Mango's documentation!
 =================================
 
+.. warning::
+   Many pages in this documentation are not ready yet.
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-
+   quick_intro/index
+   language_tour/index
+   setup_guide/index
+   language_reference/index
+   conventions/index
+   guides/index
 
 Indices and tables
 ==================
