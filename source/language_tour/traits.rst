@@ -1,6 +1,12 @@
 
-Traits (interfaces)
+Traits
 ===============================
+
+Similar to / also known as: interfaces, protocols
+
+Traits
+-------------------------------
+
 
 .. todo: traits
 

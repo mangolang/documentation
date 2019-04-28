@@ -30,12 +30,12 @@ In some cases, this makes no semantic difference (even if it might affect perfor
 
     let li1 = [1]
     update_list(li1)
-    echo(li1)
+    print(li1)
 
     # list with one element
     let li2 = [1]
     update_number(li2)
-    echo(li2)
+    print(li2)
 
 The above will show:
 

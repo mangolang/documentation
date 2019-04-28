@@ -1,11 +1,13 @@
 
-Type parameters
+Union
 ===============================
 
-Union (sum type, enum, oneof)
+Similar to / also known as: sum type, enum, enumeration, oneof.
+
+One of
 -------------------------------
 
-It is also possible to specify that *one of* several types should be used.
+It is possible to specify that *one of* several types should be used.
 
 .. code-block::
 
@@ -35,7 +37,7 @@ The only difference is that ``Network`` and ``Disk`` are inside the namespace ``
 Unless explicitly implemented, unions automatically implement those trait that are implemented by every variant, by delegating to the current variant.
 
 Tagged vs untagged
-...............................
+-------------------------------
 
 There are some differences between these 'one of' types in different languages. Many languages have nothing, or only have enums that cannot hold instance data.
 
@@ -59,7 +61,7 @@ You can create your own tags easily, and you are usually encouraged to do so:
 		record C(int)
 
 Unions vs trait impl
-...............................
+-------------------------------
 
 This has some parallels to inheritance, or to implementing traits.
 

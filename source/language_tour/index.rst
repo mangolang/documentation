@@ -7,3 +7,7 @@ Language tour
     :caption: Contents:
 
     argument_passing
+    records
+    unions
+    traits
+    type_parameters

@@ -1,9 +1,11 @@
 
-Type parameters
-===============================
+Record
+====================================
 
-Record (class, struct, product type)
--------------------------------------
+Similar to / also known as: class, struct, product type.
+
+Records
+-------------------------------
 
 Like most languages, Mango lets you combine several individual fields into a single type:
 
@@ -32,12 +34,12 @@ Record types can have behaviour associated with them, mostly using traits, but a
 
 In the future, Mango might support an 'anonymous' version of records, where no record name or member names need to be specified. (This is like tuples in some languages).
 
-Inheritance
-...............................
+No inheritance
+-------------------------------
 
 Records in Mango cannot extend other records. There is no inheritance of fields or logic.
 
-There is polymorphism, however. A record can implement a trait, and different implementations of the trait can then be used polymorphically. That is, you can write code for ``Fruit``, and it can be used for ``Apple``s and ``Orange``s. Virtual calls are also supported.
+There is polymorphism, however. A record can implement a trait, and different implementations of the trait can then be used polymorphically. That is, you can write code for ``Fruit``, and it can be used for ``Apple`` and ``Orange``. Virtual calls are also supported.
 
 How does Mango solve the problems that Java solves with inheritance?
 
