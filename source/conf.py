@@ -18,7 +18,6 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Mango'
-copyright = '2019, Mark'
 author = 'Mark'
 
 # The full version, including alpha/beta/rc tags
@@ -40,7 +39,7 @@ templates_path = ['../templates']
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = [
-	'README.rst',
+	# 'README.rst',
 ]
 
 
