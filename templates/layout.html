@@ -4,6 +4,14 @@
 {# Override the standard style to include a logo and a link to the site. #}
 
 {% block content %}
-	HELLO WORLD!
 	{{ super() }}
 {% endblock content %}
+
+{% block sidebartitle %}
+	<div>
+		<a href="http://mangolang.org/" title="Click to visit the Mango website">
+			<img src="_static/mango_logo_bg.png" alt="" style="min-width: 150px; min-height: 150px; border-radius: 0;" />
+		</a>
+	</div>
+	{{ super() }}
+{% endblock sidebartitle %}
