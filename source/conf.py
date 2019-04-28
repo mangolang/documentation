@@ -22,10 +22,8 @@ author = 'Mark'
 
 html_show_sourcelink = False
 
-# TODO @mark: these two don't work
 theme_canonical_url = 'https://docs.mangolang.org/'
-favicon = 'https://mangolang.org/mango_logo.png'
-logo = 'https://mangolang.org/mango_logo.png'
+favicon = 'mango_logo_bg.png'
 
 # The full version, including alpha/beta/rc tags
 release = '0.2.0'
