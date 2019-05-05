@@ -1,5 +1,5 @@
 
-Union
+Unions
 ===============================
 
 Similar to / also known as: sum type, enum, enumeration, oneof.
@@ -46,10 +46,9 @@ Of languages that have more expressive sum union types, there are two variants:
 * Tagged (sum types): each variant has a name and so can be distinguished, even if the types or values are the same. E.g. the type would not be ``String | int | int``, but rather ``A(String) | B(int) | C(int)``.
 * Untagged (union types): possible values are all values of member types, with duplicates removes. So ``String | int | int`` is the same as ``String | int``, as the two integer variants are indistinguishable.
 
-**Mango uses untagged unions**.
+In Mango, it is tracked which variant is present. But the tag is not part of the union, the type is used instead.
 
-.. note::
-    Note that by 'untagged' it is not meant the language does not know which variant is present. So Mango is not like C. It merely means no explicit name is used to tag types.
+This means that Mango unions behave a bit like untagged unions, in that ``String | int | int`` is not a valid union type. But unlike the (untagged) unions in C, the variant is stored and can be found for any union instance.
 
 You can create your own tags easily, and you are usually encouraged to do so:
 
@@ -60,14 +59,16 @@ You can create your own tags easily, and you are usually encouraged to do so:
 		record B(int)
 		record C(int)
 
+The advantages of using the type as 'tag' are less verbosity and the ability for a type to be part of multiple unions.
+
 Unions vs trait impl
 -------------------------------
 
 This has some parallels to inheritance, or to implementing traits.
 
-The variants ``A``, ``B`` and ``C`` of ``union U = A | B | B`` are assignable to variables of type ``U``, and nothing else is.
+The variants ``A``, ``B`` and ``C`` of ``union U = A | B | C`` are assignable to variables of type ``U``, and nothing else is.
 
-The same would be true if ``U`` were a trait and ``A``, ``B``, and ``C`` the record implementing it.
+The same would be true if ``U`` were a trait and ``A``, ``B``, and ``C`` the only records implementing it.
 
 Indeed, languages like Kotlin implement sum types as a special form of inheritance (using ``sealed``). In Mango the parallel is less explicit.
 

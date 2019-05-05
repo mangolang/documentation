@@ -1,5 +1,5 @@
 
-Record
+Records
 ====================================
 
 Similar to / also known as: class, struct, product type.
