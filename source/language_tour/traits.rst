@@ -19,7 +19,7 @@ It is also possible to specify a combination of types, if the types are traits:
 .. code-block::
 
 	fn pythagoras(x: T, y: T) -> T where T = Add<T, Out=T> & Mul<T, Out=T>:
-        x * x + y * y
+		x * x + y * y
 
 Here ``T`` is a type that implements both ``Add`` and ``Mul``.
 

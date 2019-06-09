@@ -12,8 +12,8 @@ It is possible to specify that *one of* several types should be used.
 .. code-block::
 
 	record Network:
-         socket: Socket
-         secure: Boolean
+		 socket: Socket
+		 secure: Boolean
 	record Disk:
 		fh: FileReadHandle
 
@@ -27,9 +27,9 @@ This could also be achieved by doing:
 
 	union DataSource:
 		record Network:
-            socket: Socket
-            secure: Boolean
-        record Disk:
+			socket: Socket
+			secure: Boolean
+		record Disk:
 			fh: FileReadHandle
 
 The only difference is that ``Network`` and ``Disk`` are inside the namespace ``DataSource``.

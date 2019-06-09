@@ -29,8 +29,8 @@ Record types can have behaviour associated with them, mostly using traits, but a
 .. code-block::
 
 	impl Person:
-        fn greet(&self):
-            print("helo, 0:s", self.name)
+		fn greet(&self):
+			print("hello, 0:s", self.name)
 
 In the future, Mango might support an 'anonymous' version of records, where no record name or member names need to be specified. (This is like tuples in some languages).
 
