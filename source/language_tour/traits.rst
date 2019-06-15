@@ -18,12 +18,12 @@ It is also possible to specify a combination of types, if the types are traits:
 
 .. code-block::
 
-	fn pythagoras(x: T, y: T) -> T where T = Add<T, Out=T> & Mul<T, Out=T>:
+	fn pythagoras(x: T, y: T) -> T where T = Add<T, Out=T> and Mul<T, Out=T>:
 		x * x + y * y
 
 Here ``T`` is a type that implements both ``Add`` and ``Mul``.
 
-Intersection types are not distinct concrete types (like records or unions), just bound on existing concrete types. You cannot create an instance of ``Add & Mul``, but it is nonetheless very useful for type parameters.
+Intersection types are not distinct concrete types (like records or unions), just bound on existing concrete types. You cannot create an instance of ``Add and Mul``, but it is nonetheless very useful for type parameters.
 
 Note that it does not make sense to create an intersection containing one or more known, concrete types.
 

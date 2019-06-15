@@ -42,12 +42,14 @@ Symbols
   In combination with various keywords, this starts a block, either multiline by indentation, or inline.
 
 ``+``, ``-``, ``*``, ``/`` (plus, minus, asterisk, slash)
-  Mathematical operations.
+  As binary operators, these are the usual mathematical operations.
 
-  Has a separate meaning in types.
+  As unary operators, ``+`` and ``-`` are positive and negative values.
+
+  In types, ``X*`` is a shorthand for a collection of ``X``.
 
 ``//`` (double slash)
-  Integer division.
+  As binary operator, integer division.
 
 ``==``, ``>``, ``<``, ``<=``, ``>=``
   Ordering operators.
@@ -67,9 +69,11 @@ Symbols
   Modified string literal, e.g. raw or templated.
 
 ``[1, 2]`` (square brackets)
-  Array literal.
+  As a value, this is an array literal.
 
-  Has a separate meaning as a postfix.
+  As a postfix for a value, this is indexing.
+
+  As a postfix for a type, this is a generic parameter.
 
 ``{a=2}`` (curly braces)
   Map literal.
@@ -81,14 +85,47 @@ newline
   End of statement unless following ellipsis.
 
 ``...`` (ellipsis)
-  A line continuation.
+  At the end of a line, this means the next line is a continuation of the same statement.
 
 ``,`` (comma)
   Separator in array or map literals and in function signatures of calls.
 
   A comma is optional if it would be at the end of a line.
 
+``.`` (period)
+  Access a method or field
 
+``?`` (question mark)
+  As a postfix for a value, this unwraps a result type, returning early in case of failure.
+
+  In types, ``X?`` is a shorthand for an optional of ``X``.
+
+``&`` (ampersand)
+  As a prefix for values or types, this indicates borrowing.
+
+  .. warning::
+      Ampersand might change to postfix.
+
+``#`` (hash)
+  As a type prefix, ``#X`` means a dynamic, mixed types implementing ``X`` (whereas ``X`` is a a static, pure type implementing ``X``). See :doc:`/language_tour/type_parameters`
+
+  .. warning::
+      Hash might change to postfix.
+
+``|`` (pipe)
+  For values, apply an operation to every element in a collection.
+
+  .. warning::
+      Pipe is not confirmed yet.
+
+``@`` (at)
+  As a value postfix, this awaits the result.
+
+
+Note that these symbols, common in several languages, do not have their C-like meaning in Mango:
+
+* ``x++`` and ``x--``: use ``x += 1`` or ``x -= 1``
+* ``&&`` and ``||``: use ``and`` or ``or``
 
 TODO: Several symbols in Mango have a double meaning: one in a type and one in a value.
 
