@@ -18,6 +18,7 @@ Keywords
 * ``else``: In combination with ``if``, the alternative case.
 * ``for``: A for-loop that iterates over an iterator.
 * ``while``: A while-loop that iterations until a condition no longer holds.
+* ``in``: In combination with ``if`` or ``for``.
 * ``fun``: Declares a function.
 * ``return``: (Early) return from a function (hint: may be omitted for final return).
 * ``and``: Boolean 'and'.
@@ -29,42 +30,67 @@ This list is sure to grow.
 Symbols
 -------------------------------
 
-These are general syntax symbols:
-
 ``%`` (percentage)
-  Comment
+  Comment.
 
 ``%%`` (double percentage)
-  Documentation
-
-``...`` (ellipsis)
-  A line continuation
+  Documentation.
 
 ``:`` (colon)
   After a value, this is followed by a type tag.
 
   In combination with various keywords, this starts a block, either multiline by indentation, or inline.
 
-``=`` (single equals)
-  Assignment, parameter default, named arguments, map literals
-
 ``+``, ``-``, ``*``, ``/`` (plus, minus, asterisk, slash)
-  Mathematical operations
+  Mathematical operations.
 
-  (note that ``*`` has another meaning in types)
+  Has a separate meaning in types.
 
 ``//`` (double slash)
-  Integer division
+  Integer division.
+
+``==``, ``>``, ``<``, ``<=``, ``>=``
+  Ordering operators.
+
+``=`` (single equals)
+  Assignment, parameter default, named arguments, map literals.
 
 ``+=`` (operator and equals)
-  Updating assignment (note ``a += b`` can be a different operation from ``a = a + b``)
+  Updating assignment (note ``a += b`` can be a different operation from ``a = a + b``).
+
+``"string"`` (double quotes)
+  String literal.
+
+  Note that single quotes cannot be used for strings.
+
+``x"string"`` (letter followed by string)
+  Modified string literal, e.g. raw or templated.
+
+``[1, 2]`` (square brackets)
+  Array literal.
+
+  Has a separate meaning as a postfix.
+
+``{a=2}`` (curly braces)
+  Map literal.
+
+``()`` (parentheses)
+  Used for grouping, function invocation, used in function signatures.
+
+newline
+  End of statement unless following ellipsis.
+
+``...`` (ellipsis)
+  A line continuation.
+
+``,`` (comma)
+  Separator in array or map literals and in function signatures of calls.
+
+  A comma is optional if it would be at the end of a line.
 
 
 
-
-Several symbols in Mango have a double meaning: one in a type and one in a value.
-
-
+TODO: Several symbols in Mango have a double meaning: one in a type and one in a value.
 
 Reserved
 -------------------------------
