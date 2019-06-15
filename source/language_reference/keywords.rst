@@ -8,17 +8,18 @@ Keywords
 Keywords
 -------------------------------
 
-* ``import``
-* ``struct``
-* ``union``
-* ``trait``
-* ``let``
-* ``mut``
-* ``if``
-* ``for``
-* ``while``
-* ``fun``
-* ``return``
+* ``import``: At the top of a source file, import another file or package
+* ``record``: See :doc:`/language_tour/records`
+* ``union``: See :doc:`/language_tour/unions`
+* ``trait``: See :doc:`/language_tour/traits`
+* ``let``: Declares a variable
+* ``mut``: Makes a reference mutable
+* ``if``: A condition
+* ``else``: In combination with ``if``, the alternative case
+* ``for``: A for-loop that iterates over an iterator
+* ``while``: A while-loop that iterations until a condition no longer holds.
+* ``fun``: Declares a function.
+* ``return``: (Early) return from a function (hint: may be omitted for final return).
 
 This list is sure to grow.
 
@@ -96,7 +97,6 @@ Adding a keyword is a breaking change, so a large number of keywords are current
 * ``goto``
 * ``impl``
 * ``implements``
-* ``import``
 * ``in``
 * ``init``
 * ``int``
@@ -153,12 +153,10 @@ Adding a keyword is a breaking change, so a large number of keywords are current
 * ``throw``
 * ``throws``
 * ``to``
-* ``trait``
 * ``transient``
 * ``true``
 * ``try``
 * ``type``
-* ``union``
 * ``unite``
 * ``unsafe``
 * ``until``
