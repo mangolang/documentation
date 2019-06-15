@@ -8,28 +8,59 @@ Keywords
 Keywords
 -------------------------------
 
-* ``import``: At the top of a source file, import another file or package
-* ``record``: See :doc:`/language_tour/records`
-* ``union``: See :doc:`/language_tour/unions`
-* ``trait``: See :doc:`/language_tour/traits`
-* ``let``: Declares a variable
-* ``mut``: Makes a reference mutable
-* ``if``: A condition
-* ``else``: In combination with ``if``, the alternative case
-* ``for``: A for-loop that iterates over an iterator
+* ``import``: At the top of a source file, import another file or package.
+* ``record``: See :doc:`/language_tour/records`.
+* ``union``: See :doc:`/language_tour/unions`.
+* ``trait``: See :doc:`/language_tour/traits`.
+* ``let``: Declares a variable.
+* ``mut``: Makes a reference mutable.
+* ``if``: A condition.
+* ``else``: In combination with ``if``, the alternative case.
+* ``for``: A for-loop that iterates over an iterator.
 * ``while``: A while-loop that iterations until a condition no longer holds.
 * ``fun``: Declares a function.
 * ``return``: (Early) return from a function (hint: may be omitted for final return).
+* ``and``: Boolean 'and'.
+* ``or``: Boolean 'or'.
+* ``not``: Boolean 'not'.
 
 This list is sure to grow.
 
 Symbols
 -------------------------------
 
-These are general syntax symbols, independent of context:
+These are general syntax symbols:
 
-* ``...`` (ellipsis): A line continuation
-* ``:`` (colon): After a value, this is followed by a type tag. In combination with various keywords, this starts a block, either multiline by indentation, or inline.
+``%`` (percentage)
+  Comment
+
+``%%`` (double percentage)
+  Documentation
+
+``...`` (ellipsis)
+  A line continuation
+
+``:`` (colon)
+  After a value, this is followed by a type tag.
+
+  In combination with various keywords, this starts a block, either multiline by indentation, or inline.
+
+``=`` (single equals)
+  Assignment, parameter default, named arguments, map literals
+
+``+``, ``-``, ``*``, ``/`` (plus, minus, asterisk, slash)
+  Mathematical operations
+
+  (note that ``*`` has another meaning in types)
+
+``//`` (double slash)
+  Integer division
+
+``+=`` (operator and equals)
+  Updating assignment (note ``a += b`` can be a different operation from ``a = a + b``)
+
+
+
 
 Several symbols in Mango have a double meaning: one in a type and one in a value.
 
@@ -43,7 +74,6 @@ Adding a keyword is a breaking change, so a large number of keywords are current
 * ``abstract``
 * ``alias``
 * ``all``
-* ``and``
 * ``annotation``
 * ``any``
 * ``as``
@@ -124,7 +154,6 @@ Adding a keyword is a breaking change, so a large number of keywords are current
 * ``object``
 * ``open``
 * ``operator``
-* ``or``
 * ``out``
 * ``override``
 * ``package``
