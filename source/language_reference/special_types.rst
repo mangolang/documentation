@@ -1,6 +1,6 @@
 
 .. warning::
-    The language is not ready yet, this will likely be expanded before Mango 1.0.
+    The language is not ready yet, more types will probably be added both before and after Mango 1.0.
 
 Special types
 ===============================
