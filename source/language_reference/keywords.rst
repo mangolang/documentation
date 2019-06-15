@@ -42,11 +42,13 @@ Symbols
   In combination with various keywords, this starts a block, either multiline by indentation, or inline.
 
 ``+``, ``-``, ``*``, ``/`` (plus, minus, asterisk, slash)
-  As binary operators, these are the usual mathematical operations.
+  As binary operators on values, these are the usual mathematical operations.
 
   As unary operators, ``+`` and ``-`` are positive and negative values.
 
   In types, ``X*`` is a shorthand for a collection of ``X``.
+
+  As a binary operator for types, ``+`` is used to indicate a combination of trait bounds.
 
 ``//`` (double slash)
   As binary operator, integer division.
@@ -117,6 +119,8 @@ newline
 
   .. warning::
       Pipe is not confirmed yet.
+
+  For types, ``|`` is used to separate union variants.
 
 ``@`` (at)
   As a value postfix, this awaits the result.
