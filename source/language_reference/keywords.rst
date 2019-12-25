@@ -125,6 +125,9 @@ newline
 ``@`` (at)
   As a value postfix, this awaits the result.
 
+``\`` (backslash)
+  Used for escaping strings.
+
 
 Note that these symbols, common in several languages, do not have their C-like meaning in Mango:
 
