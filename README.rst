@@ -10,4 +10,4 @@ Mango documentation
 
 Read the documentation online at:
 
-https://docs.mangolang.org/
+https://docs.mangocode.org/
