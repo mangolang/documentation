@@ -6,7 +6,7 @@ Setup guide
     :maxdepth: 1
     :caption: Contents:
 
-    directories
+    paths
 
 Mango works in a browser, so you can try it without setup!
 

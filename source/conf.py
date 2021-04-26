@@ -25,7 +25,7 @@ html_show_sourcelink = False
 theme_canonical_url = 'https://docs.mangocode.org/'
 
 # The full version, including alpha/beta/rc tags
-release = '0.2.0'
+release = '0.2.1'
 
 
 # -- General configuration ---------------------------------------------------
