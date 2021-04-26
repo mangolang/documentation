@@ -3,8 +3,10 @@ Setup guide
 ===============================
 
 .. toctree::
-	:maxdepth: 1
-	:caption: Contents:
+    :maxdepth: 1
+    :caption: Contents:
+
+    directories
 
 Mango works in a browser, so you can try it without setup!
 

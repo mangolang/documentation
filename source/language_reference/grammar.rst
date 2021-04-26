@@ -2,4 +2,4 @@
 Grammar
 ===============================
 
-A PEST grammar is currently under active construction.
+Formal grammar description is not yet available.
